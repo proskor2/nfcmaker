@@ -10,9 +10,14 @@
         <entry key="..\:/Android projects/nfcmaker/app/src/main/res/drawable/buttonwhite.xml" value="0.351" />
         <entry key="..\:/Android projects/nfcmaker/app/src/main/res/drawable/cardcorners.xml" value="0.1995" />
         <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_authorization.xml" value="0.33" />
+        <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_create_new_list.xml" value="0.25" />
         <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_list_numbers.xml" value="0.5552099533437014" />
         <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_list_viewer.xml" value="0.5" />
         <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_master_nfcactivity.xml" value="0.371875" />
+        <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_master_nfcerror.xml" value="0.371875" />
+        <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_master_qractivity.xml" value="0.25" />
+        <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_master_write_result.xml" value="0.371875" />
         <entry key="..\:/Android projects/nfcmaker/app/src/main/res/layout/activity_statistic.xml" value="0.67" />
       </map>
     </option>

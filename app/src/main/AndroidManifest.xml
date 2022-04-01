@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".views.MasterNFCError"
+            android:exported="false" />
+        <activity
+            android:name=".views.MasterWriteResult"
+            android:exported="false" />
+        <activity
+            android:name=".views.MasterNFCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.MasterQRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.CreateNewList"
+            android:exported="false" />
+        <activity
             android:name=".views.ListViewerActivity"
             android:exported="false" />
         <activity
