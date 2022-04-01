@@ -6,21 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".views.MasterWriteResult">
 
-    <ImageView
+    <androidx.cardview.widget.CardView
         android:id="@+id/image_home"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginBottom="32dp"
+        android:background="@null"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="75dp"
+        app:cardElevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            app:srcCompat="@drawable/ic_baseline_home" />
+    </androidx.cardview.widget.CardView> />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="60dp"
         android:layout_height="70dp"
         android:layout_marginBottom="60dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
         app:layout_constraintBottom_toTopOf="@+id/image_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,6 +48,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:foreground="?attr/selectableItemBackground"
         android:text="Данные были успешно записаны на NFC-токен"
         android:textAlignment="center"
         android:textColor="@color/green"

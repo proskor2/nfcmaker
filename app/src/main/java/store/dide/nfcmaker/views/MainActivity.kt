@@ -11,13 +11,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.title = "Главная"
+
 
         binding.cardListNumbers.setOnClickListener() {
             startActivity(Intent(this,ListNumbersActivity::class.java))
         }
 
         binding.cardWriteTokens.setOnClickListener() {
-
+            startActivity(Intent(this,MasterQRActivity::class.java))
         }
 
         binding.cardStatistics.setOnClickListener() {

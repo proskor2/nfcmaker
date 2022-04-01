@@ -10,6 +10,9 @@ class StatisticActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityStatisticBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.title = "Статистика"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
     }
 }

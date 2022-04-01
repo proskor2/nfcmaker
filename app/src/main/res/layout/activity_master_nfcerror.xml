@@ -29,7 +29,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/nfc"
-        android:alpha="0.4"/>
+        android:alpha="0.4"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"/>
 
     <ImageView
         android:id="@+id/imageView6"

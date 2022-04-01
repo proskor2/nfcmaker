@@ -20,22 +20,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/image_writenfc"
+<!--    <ImageButton-->
+<!--        android:id="@+id/image_scanqr"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginBottom="32dp"-->
+<!--        android:src="@drawable/qrcode"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:background="@null"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_scanqr"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginBottom="32dp"
+        android:background="@null"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="75dp"
+        app:cardElevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/qrcode" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            app:srcCompat="@drawable/ic_baseline_qr_code_scanner_24" />
+    </androidx.cardview.widget.CardView>
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="0dp"
         android:layout_height="167dp"
         android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/image_writenfc"
+        app:layout_constraintBottom_toTopOf="@+id/image_scanqr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/cardbackside" />

@@ -2,14 +2,17 @@ package store.dide.nfcmaker.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import store.dide.nfcmaker.databinding.ActivityMasterNfcerrorBinding
+
 
 class MasterNFCError : AppCompatActivity() {
-    private lateinit var binding: ActivityMasterNfcerrorBinding
+    private lateinit var binding: store.dide.nfcmaker.databinding.ActivityMasterNfcerrorBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMasterNfcerrorBinding.inflate(layoutInflater)
+        binding = store.dide.nfcmaker.databinding.ActivityMasterNfcerrorBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.title = "Запись токена"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
     }
 }

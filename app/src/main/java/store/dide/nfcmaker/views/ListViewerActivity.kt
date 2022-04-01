@@ -10,6 +10,10 @@ class ListViewerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityListViewerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val nameList = intent.extras?.get("listname").toString()
+        supportActionBar?.title = nameList
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
     }
 }
