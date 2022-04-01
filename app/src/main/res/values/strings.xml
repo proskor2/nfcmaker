@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">nfcmaker</string>
+    <string name="lsitnumbers">Список номеров</string>
+    <string name="listnumberdescription">Инструмент для создания списков с номерами и токенами для NFC-меток с возможностью их передачи</string>
+    <string name="writetokens">Запись токенов</string>
+    <string name="writetokensdescription">Мастер записи и проверки данных на NFC-токен</string>
+    <string name="statistics">Статистика</string>
+    <string name="statisticsdescription">Общая сводная информация по количеству выпущенных карт</string>
+    <string name="statistic_title">За все время работы системы</string>
+</resources>
