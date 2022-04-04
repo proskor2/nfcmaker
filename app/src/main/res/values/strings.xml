@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">nfcmaker</string>
+    <string name="app_name">NFCmaker</string>
     <string name="lsitnumbers">Список номеров</string>
     <string name="listnumberdescription">Инструмент для создания списков с номерами и токенами для NFC-меток с возможностью их передачи</string>
     <string name="writetokens">Запись токенов</string>
