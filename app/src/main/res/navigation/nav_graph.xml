@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authorizationFragment">
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="store.dide.nfcmaker.ui.views.AuthorizationFragment"
+        android:label="AuthorizationFragment" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="store.dide.nfcmaker.ui.views.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_listNumbersFragment"
+            app:destination="@id/listNumbersFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_masterNFCFragment"
+            app:destination="@id/masterNFCFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listNumbersFragment"
+        android:name="store.dide.nfcmaker.ui.views.lists.ListNumbersFragment"
+        android:label="ListNumbersFragment" >
+        <action
+            android:id="@+id/action_listNumbersFragment_to_createListFragment"
+            app:destination="@id/createListFragment" />
+        <action
+            android:id="@+id/action_listNumbersFragment_to_listViewerFragment"
+            app:destination="@id/listViewerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listViewerFragment"
+        android:name="store.dide.nfcmaker.ui.views.lists.ListViewerFragment"
+        android:label="ListViewerFragment" />
+    <fragment
+        android:id="@+id/createListFragment"
+        android:name="store.dide.nfcmaker.ui.views.lists.CreateListFragment"
+        android:label="CreateListFragment" />
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="store.dide.nfcmaker.ui.views.StatisticsFragment"
+        android:label="StatisticsFragment" />
+    <fragment
+        android:id="@+id/masterNFCFragment"
+        android:name="store.dide.nfcmaker.ui.views.masters.MasterNFCFragment"
+        android:label="MasterNFCFragment" >
+        <action
+            android:id="@+id/action_masterNFCFragment_to_masterQRFragment"
+            app:destination="@id/masterQRFragment" />
+        <action
+            android:id="@+id/action_masterNFCFragment_to_masterNFCError"
+            app:destination="@id/masterNFCError" />
+    </fragment>
+    <fragment
+        android:id="@+id/masterQRFragment"
+        android:name="store.dide.nfcmaker.ui.views.masters.MasterQRFragment"
+        android:label="MasterQRFragment" >
+        <action
+            android:id="@+id/action_masterQRFragment_to_masterWriteResult"
+            app:destination="@id/masterWriteResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/masterNFCError"
+        android:name="store.dide.nfcmaker.ui.views.masters.MasterNFCError"
+        android:label="MasterNFCError" >
+        <action
+            android:id="@+id/action_masterNFCError_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/masterWriteResult"
+        android:name="store.dide.nfcmaker.ui.views.masters.MasterWriteResult"
+        android:label="MasterWriteResult" >
+        <action
+            android:id="@+id/action_masterWriteResult_to_masterNFCFragment"
+            app:destination="@id/masterNFCFragment" />
+    </fragment>
+</navigation>

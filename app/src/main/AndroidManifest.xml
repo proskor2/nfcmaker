@@ -10,49 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".views.MasterNFCError"
-            android:exported="false"
-            android:parentActivityName=".views.MasterQRActivity"/>
-        <activity
-            android:name=".views.MasterWriteResult"
-            android:exported="false"/>
-        <activity
-            android:name=".views.MasterNFCActivity"
-            android:exported="false"
-            android:parentActivityName=".views.MasterQRActivity"/>
-        <activity
-            android:name=".views.MasterQRActivity"
-            android:exported="false"
-            android:parentActivityName=".views.MainActivity"/>
-        <activity
-            android:name=".views.CreateNewListActivity"
-            android:exported="false"
-            android:parentActivityName=".views.ListNumbersActivity"/>
-        <activity
-            android:name=".views.ListViewerActivity"
-            android:exported="false"
-            android:parentActivityName=".views.ListNumbersActivity"/>
-        <activity
-            android:name=".views.ListNumbersActivity"
-            android:exported="false"
-            android:parentActivityName=".views.MainActivity"/>
-        <activity
-            android:name=".views.AuthorizationActivity"
+            android:name="store.dide.nfcmaker.ui.views.MainActivity"
             android:exported="true"
-            android:theme="@style/AppTheme.FullScreen">
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".views.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".views.StatisticActivity"
-            android:exported="false"
-            android:parentActivityName=".views.MainActivity"/>
+
     </application>
+
 
 </manifest>
