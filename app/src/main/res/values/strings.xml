@@ -16,4 +16,11 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+    <string name="buttonlogin">Вход</string>
+    <string name="text_hello">Добро пожаловать!</string>
+    <string name="text_start">Если вы не знаете что это за приложение немедленно выключите его и не запускайте вновь</string>
+
 </resources>

@@ -30,4 +30,47 @@
     </style>
 
 
+    //text
+    <style name="TextMyStyle16" parent="android:TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray3</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TextMyStyle18" parent="android:TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray5</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TextMyStyle24" parent="android:TextAppearance">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    // buttons styles
+    // coral button
+    <style name="ButtonCoral" parent="android:Widget.Button">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/buttoncolor2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_margin</item>
+        <item name="android:textAppearance">@style/TextMyStyle16</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+    </style>
+
+    <style name="ButtonCoralNext" parent="ButtonCoral">
+        <item name="android:text">@string/buttonlogin</item>
+    </style>
+
 </resources>
